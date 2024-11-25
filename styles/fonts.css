@@ -1,0 +1,31 @@
+
+
+@font-face {
+    font-family: Manrope;
+    src: url("../fonts/Manrope-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url("../fonts/Manrope-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url("../fonts/Mulish-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url("../fonts/Mulish-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url("../fonts/Mulish-Regular.ttf");
+    font-weight: 400;
+}
