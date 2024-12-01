@@ -137,32 +137,23 @@ body {
     color: #1E1E1E;
     line-height: 100%;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .leasing-block-title span {
     color: #F55A00;
 }
 
-.leasing-block-info {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.leasing-block-info-button {
+    max-width: 350px;
+    margin: 0 auto;
 }
 
-.leasing-block-info-text {
-    font-size: 22px;
-    width: 417px;
-    color: rgba(30, 30, 30, 0.8);
-}
-
-.leasing-block-about-leasing {
-    position: absolute;
-    right: 150px;
-    top: 80px;
-    width: 480px;
-    font-size: 18px;
-    color: rgba(30, 30, 30, 0.8);
-}
+/*.leasing-block-info {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 30px;*/
+/*}*/
 
 /*-----Стили для блока лизинг конец-----*/
 /*-----Стили для блока каталог начало-----*/
@@ -187,7 +178,7 @@ body {
 .catalog-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     margin-bottom: 50px;
@@ -199,15 +190,14 @@ body {
     background-color: #EBE8E8;
     border-radius: 30px;
     height: 372px;
-    border-left: 3px solid transparent;
-    border-top: 3px solid transparent;
+    border: 3px solid transparent;
     cursor: pointer;
-    transition: border-left .3s ease-in-out, border-top .3s ease-in-out;
+    transition: border .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .catalog-items-item:hover {
-    border-left: 3px solid #f55a00;
-    border-top: 3px solid #f55a00;
+    border: 3px solid #f55a00;
+    box-shadow: 0 0 20px 0 #d36321;
 }
 
 .catalog-items-item-title {
@@ -221,7 +211,7 @@ body {
 
 .grid-1 {
     grid-area: 1 / 1 / 3 / 2;
-    background-image: url("../images/Хлебопекарные Печи.png");
+    background-image: url("../images/оборудование/Хлебопекарные печи.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -230,7 +220,7 @@ body {
 
 .grid-2 {
     grid-area: 1 / 2 / 2 / 3;
-    background-image: url("../images/Расстоечные шкафы.png");
+    background-image: url("../images/оборудование/Расстоечные шкафы.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -238,7 +228,7 @@ body {
 
 .grid-3 {
     grid-area: 1 / 3 / 2 / 5;
-    background-image: url("../images/Тестомесительные машины.png");
+    background-image: url("../images/оборудование/Автоматические линии.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -246,7 +236,7 @@ body {
 
 .grid-4 {
     grid-area: 2 / 2 / 3 / 4;
-    background-image: url("../images/Тестомесительные машины2.png");
+    background-image: url("../images/оборудование/Тестомесильные машины.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -254,7 +244,7 @@ body {
 
 .grid-5 {
     grid-area: 2 / 4 / 3 / 5;
-    background-image: url("../images/Делители теста.png");
+    background-image: url("../images/оборудование/Округлители теста-Photoroom (1) 2.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -263,7 +253,7 @@ body {
 
 .grid-6 {
     grid-area: 3 / 1 / 4 / 3;
-    background-image: url("../images/Округлители теста.png");
+    background-image: url("../images/оборудование/Тестораскаточные машин.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -271,7 +261,7 @@ body {
 
 .grid-7 {
     grid-area: 3 / 3 / 4 / 4;
-    background-image: url("../images/Тестозакаточные машины.png");
+    background-image: url("../images/оборудование/Универсальные дозаторы.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -279,7 +269,7 @@ body {
 
 .grid-8 {
     grid-area: 3 / 4 / 5 / 5;
-    background-image: url("../images/Пекарский холод.png");
+    background-image: url("../images/оборудование/Перегрузка теста и дежеопрокидыватели.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -288,7 +278,7 @@ body {
 
 .grid-9 {
     grid-area: 4 / 1 / 5 / 2;
-    background-image: url("../images/Хлеборезки.png");
+    background-image: url("../images/оборудование/Хлеборезки.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -296,7 +286,72 @@ body {
 
 .grid-10 {
     grid-area: 4 / 2 / 5 / 4;
-    background-image: url("../images/Перегрузка теста и дежеопрокидыватели.png");
+    background-image: url("../images/оборудование/Делители теста.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-11 {
+    grid-area: 5 / 1 / 7 / 2;
+    background-image: url("../images/оборудование/пекарский холод.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 764px;
+}
+
+.grid-12 {
+    grid-area: 5 / 2 / 6 / 3;
+    background-image: url("../images/оборудование/Планетарные миксеры.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-13 {
+    grid-area: 5 / 3 / 6 / 5;
+    background-image: url("../images/оборудование/Тестозакаточные машины.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-14 {
+    grid-area: 6 / 2 / 7 / 4;
+    background-image: url("../images/оборудование/Кондитерское оборудование.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-15 {
+    grid-area: 6 / 4 / 7 / 5;
+    background-image: url("../images/оборудование/Фритюрницы.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-16 {
+    grid-area: 7 / 1 / 8 / 3;
+    background-image: url("../images/оборудование/Упаковка.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-17 {
+    grid-area: 7 / 3 / 8 / 4;
+    background-image: url("../images/оборудование/Тележки и формы.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-18 {
+    grid-area: 7 / 4 / 8 / 5;
+    background-image: url("../images/оборудование/Вспомогательное оборудование.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -304,8 +359,7 @@ body {
 
 
 .catalog-button {
-    gap: 10px;
-    width: 312px;
+    width: 350px;
     margin: 0 auto;
 }
 
@@ -546,6 +600,39 @@ body {
 .about-content {
     display: none;
     align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    gap: 20px;
+}
+
+#service-content.about-content {
+    flex-direction: column;
+}
+
+#service-content .about-content-info {
+    max-width: unset;
+}
+
+#service-content .about-content-images {
+    display: flex;
+    gap: 20px;
+    width: unset;
+    height: unset;
+}
+
+.about-content-images-item-title {
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+.about-content-images-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -569,16 +656,24 @@ body {
     margin-bottom: 30px;
 }
 
+.about-content-info-title span {
+    color: #F55A00;
+}
+
 .about-content-info-text {
     font-family: Mulish, sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: rgba(30, 30, 30, 0.8);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
-.about-content-info-text:last-child {
-    margin-bottom: 50px;
+/*.about-content-info-text:last-child {*/
+/*    margin-bottom: 50px;*/
+/*}*/
+
+.about-content-info-text span {
+    color: #F55A00;
 }
 
 .about-content-info-actions {
@@ -612,56 +707,20 @@ body {
 }
 
 .about-content-images {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*gap: 20px;*/
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    width: 600px;
+    height: 400px;
 }
 
-.about-content-images-top {
-    grid-area: 1 / 1 / 4 / 4;
-
+.about-content-images iframe {
+    border-radius: 30px;
 }
 
-.about-content-images-top img {
+.about-content-images img {
+    border-radius: 30px;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
 }
 
-.about-content-images-bottom-left {
-    grid-area: 4 / 2 / 6 / 4;
-}
-
-.about-content-images-bottom-left iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-}
-
-.about-content-images-bottom-right-top {
-    grid-area: 4 / 1 / 5 / 2;
-    width: 260px;
-    height: 171px;
-    border-radius: 30px;
-}
-
-.about-content-images-bottom-right-bottom {
-    grid-area: 5 / 1 / 6 / 2;
-    width: 260px;
-    height: 171px;
-}
-
-.about-content-images-bottom-right-top img,
-.about-content-images-bottom-right-bottom img{
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-}
 
 /*-----Стили для блока о нас конец-----*/
 /*-----Стили для блока новости начало-----*/
@@ -854,6 +913,10 @@ li.slick-active {
     flex-wrap: wrap;
 }
 
+.collaboration-items .slick-list {
+    max-width: 400px;
+}
+
 .collaboration-items-item {
     width:  325px;
     height: 205px;
@@ -863,18 +926,14 @@ li.slick-active {
 }
 
 .collaboration-items-item-img {
-    width: 305px;
-    height: 185px;
+    width: 100%;
+    height: 100%;
 }
 
 .collaboration-items-item-img img {
     border-radius: 40px;
     width: 100%;
     height: 100%;
-}
-
-.collaboration-items .slick-list {
-    max-width: 280px;
 }
 
 .collaboration-items .slick-dots {

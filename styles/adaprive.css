@@ -1,10 +1,5 @@
 @media screen and (max-width: 1450px) {
-    .leasing-block-about-leasing {
-        right: 80px;
-        left: 60px;
-        top: 40px;
-        width: unset;
-    }
+
 }
 
 
@@ -41,25 +36,6 @@
         grid-row-gap: 20px;
         justify-items: center;
     }
-
-    .about-content-images-top {
-        grid-area: 1 / 1 / 3 / 3;
-        max-height: 362px;
-    }
-
-    .about-content-images-bottom-right-top {
-        grid-area: 1 / 3 / 2 / 4;
-    }
-
-    .about-content-images-bottom-right-bottom {
-        grid-area: 2 / 3 / 3 / 4;
-    }
-
-    .about-content-images-bottom-left {
-        grid-area: 3 / 1 / 5 / 4;
-        width: 640px;
-    }
-
 }
 
 
@@ -111,6 +87,11 @@
 
 @media screen and (max-width: 1050px) {
 
+    .main {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
     .main-advantages {
         flex-direction: column;
     }
@@ -141,11 +122,6 @@
 
 @media screen and (max-width: 1000px) {
 
-    .main {
-        padding-bottom: 30px;
-        padding-top: 30px;
-    }
-
     .main-title,
     .leasing-block-title,
     .catalog-title,
@@ -166,10 +142,6 @@
         padding: 100px 50px 50px 50px;
     }
 
-    .leasing-block-about-leasing {
-        left: 50px;
-        right: 50px;
-    }
 
     .about-actions-item {
         font-size: 25px;
@@ -213,49 +185,14 @@
         height: 215px;
     }
 
-    .collaboration-items-item-img {
-        width: 100%;
-        height: 100%;
-    }
-
     .about-content-images {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
-
-    .about-content-images-top {
-        grid-area: 1 / 1 / 3 / 3;
-        width: 540px;
-    }
-
-    .about-content-images-bottom-right-top {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-
-    .about-content-images-bottom-right-top img {
-        height: 100%;
-        width: 260px;
-    }
-
-    .about-content-images-bottom-right-bottom {
-        grid-area: 3 / 2 / 4 / 3;
-    }
-
-    .about-content-images-bottom-left {
-        grid-area: 4 / 1 / 6 / 3;
-        width: 540px;
-    }
-
-
 }
 
 
 @media screen and (max-width: 750px) {
-
-    .leasing-block-info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
     .main,
     .leasing,
@@ -289,10 +226,6 @@
     .leasing-block {
         padding: 130px 30px 30px 30px;
     }
-    .leasing-block-about-leasing {
-        left: 30px;
-        right: 30px;
-    }
 
     .about-actions {
         flex-direction: column;
@@ -311,9 +244,13 @@
     .about-content-info-text {
         font-size: 18px;
     }
+}
 
 
-
+@media screen and (max-width: 620px) {
+    .collaboration-items-item {
+        height: unset;
+    }
 }
 
 
@@ -368,22 +305,8 @@
         font-size: 18px;
     }
 
-    .leasing-block-about-leasing {
-        font-size: 16px;
-        top: 20px;
-    }
-
-    .leasing-block-info-text {
-        font-size: 20px;
-        width: unset;
-    }
-
     .leasing-block-title {
         margin-bottom: 20px;
-    }
-
-    .leasing-block-info {
-        gap: 20px;
     }
 
     .catalog-title {
@@ -450,29 +373,6 @@
         gap: 20px;
     }
 
-    .about-content-images-top {
-        max-width: 350px;
-    }
-
-    .about-content-images-bottom-right-top {
-        width: 350px;
-        height: unset;
-    }
-
-    .about-content-images-bottom-right-top img {
-        width: 100%;
-    }
-
-    .about-content-images-bottom-right-bottom {
-        width: 350px;
-        height: unset;
-    }
-
-    .about-content-images-bottom-left {
-        width: 350px;
-        height: 210px;
-    }
-
     .about-subtitle {
         font-size: 18px;
         margin-bottom: 30px;
@@ -502,22 +402,8 @@
         padding: 160px 20px 20px 20px;
     }
 
-    .leasing-block-about-leasing {
-        right: 20px;
-        left: 20px;
-    }
-
     .leasing-block-title {
         font-size: 25px;
-    }
-
-    .leasing-block-info-text {
-        font-size: 18px;
-    }
-
-    .leasing-block-info-button {
-        order: 1;
-        width: 100%;
     }
 
     .button-orange {
@@ -536,29 +422,5 @@
 @media screen and (max-width: 400px) {
     .catalog-items-item {
         height: 349px;
-    }
-
-
-    .about-content-images-top {
-        width: 280px;
-    }
-
-    .about-content-images-bottom-right-top {
-        width: 280px;
-        height: unset;
-    }
-
-    .about-content-images-bottom-right-top img {
-        width: 100%;
-    }
-
-    .about-content-images-bottom-right-bottom {
-        width: 280px;
-        height: unset;
-    }
-
-    .about-content-images-bottom-left {
-        width: 280px;
-        height: 210px;
     }
 }

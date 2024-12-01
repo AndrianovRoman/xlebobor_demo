@@ -13,7 +13,6 @@ $(document).ready(function(){
     wow.init();
 
     let items = document.querySelectorAll('.about-actions-item');
-    console.log(items);
 
     let activeItem = items[0];
     let id = document.querySelector('#company-content');
@@ -26,7 +25,6 @@ $(document).ready(function(){
             }
             id = document.querySelector(`#${item.dataset.content}`);
             id.classList.add('active');
-            console.log(id);
 
             if (activeItem) {
                 activeItem.classList.remove('active');
@@ -78,7 +76,6 @@ $(document).ready(function(){
             $('.collaboration-items').not('.slick-initialized').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                variableWidth: true,
                 dots: true,
                 arrows: false,
             });
