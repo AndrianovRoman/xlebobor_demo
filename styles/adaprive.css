@@ -17,7 +17,7 @@
 
     .service-advantages-item {
         padding: 30px 17px 30px 20px;
-        height: 250px;
+        height: 200px;
     }
 
     .about-content {
@@ -27,15 +27,6 @@
     .about-content-info {
         max-width: unset;
     }
-
-    .about-content-images {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        justify-items: center;
-    }
 }
 
 
@@ -44,6 +35,11 @@
     .main-advantages-item-title {
         font-size: 35px;
     }
+
+    .warehouse-block {
+        max-width: 400px;
+    }
+
 }
 
 
@@ -55,14 +51,18 @@
     }
 
     .catalog-items-item {
-        height: 300px;
-        width: 400px;
-        background-size: 200px;
+        height: 280px;
+        width: 450px;
+        background-size: contain;
     }
 
     .grid-10 {
         background-size: 180px;
     }
+
+    /*.warehouse-image {*/
+    /*    max-width: 500px;*/
+    /*}*/
 }
 
 
@@ -82,6 +82,7 @@
         height: unset;
         border-radius: 30px;
     }
+
 }
 
 
@@ -114,10 +115,12 @@
         width: 100%;
         padding: 50px 20px;
     }
+
+    .about-actions-item {
+        font-size: 25px;
+    }
+
 }
-
-
-
 
 
 @media screen and (max-width: 1000px) {
@@ -130,7 +133,8 @@
     .consultation-info-title,
     .about-title,
     .news-title,
-    .collaboration-title {
+    .collaboration-title,
+    .warehouse-block-title {
         font-size: 40px;
     }
 
@@ -138,23 +142,25 @@
         font-size: 20px;
     }
 
-    .leasing-block {
-        padding: 100px 50px 50px 50px;
-    }
-
-
-    .about-actions-item {
-        font-size: 25px;
+    .leasing-block,
+    .warehouse {
+        padding: 30px;
     }
 
 }
 
+@media screen and (max-width: 980px) {
 
+    .catalog-items-item {
+        padding-left: 15px;
+        width: 400px;
+    }
+
+}
 
 @media screen and (max-width: 880px) {
     .catalog-items-item {
-        width: 100%;
-        background-size: 320px;
+        width: 600px;
     }
 
     .about-content-info-actions-youtube {
@@ -168,26 +174,42 @@
     .about-content-info-actions-youtube a {
         font-size: 18px;
     }
+
+    .about-actions-item {
+        font-size: 22px;
+        padding: 20px;
+        width: unset;
+        height: unset;
+    }
+
+    .about-actions-item.active::before {
+        bottom: -12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .about-content-images-item-title {
+        font-size: 30px;
+    }
+
+    .warehouse {
+        gap: 0;
+    }
+
 }
 
 
 
 @media screen and (max-width: 800px) {
-    .about-actions-item {
-        font-size: 22px;
-        padding: 30px;
-        width: unset;
-        height: unset;
-    }
 
     .collaboration-items-item {
         width: 282px;
         height: 215px;
     }
 
-    .about-content-images {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+    #service-content .about-content-images {
+        flex-direction: column;
+        width: 600px;
     }
 }
 
@@ -200,7 +222,8 @@
     .service,
     .consultation,
     .about,
-    .collaboration {
+    .collaboration,
+    .warehouse {
         margin-bottom: 50px;
     }
 
@@ -220,11 +243,26 @@
         flex-direction: column;
     }
 
+    .about-actions-item {
+        padding: 20px 10px;
+    }
+
+    .warehouse {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .warehouse-block {
+        max-width: unset;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
-    .leasing-block {
-        padding: 130px 30px 30px 30px;
+    .leasing-block,
+    .warehouse {
+        padding: 20px;
     }
 
     .about-actions {
@@ -244,8 +282,22 @@
     .about-content-info-text {
         font-size: 18px;
     }
+
+    .about-content-images {
+        width: 400px;
+        height: 250px;
+    }
+
 }
 
+
+@media screen and (max-width: 650px) {
+
+    .catalog-items-item {
+        width: 100%;
+    }
+
+}
 
 @media screen and (max-width: 620px) {
     .collaboration-items-item {
@@ -263,7 +315,8 @@
     .consultation-info-title,
     .about-title,
     .news-title,
-    .collaboration-title {
+    .collaboration-title,
+    .warehouse-block-title {
         font-size: 30px;
     }
 
@@ -319,11 +372,13 @@
 
     .catalog-items-item {
         padding-top: 30px;
-        padding-left: 25px;
-        background-size: 280px;
     }
 
-    .catalog-items-item-title {
+    .warehouse-block-title {
+        margin-bottom: 30px;
+    }
+
+    .warehouse-block-description {
         font-size: 20px;
     }
 
@@ -366,13 +421,6 @@
         padding: 30px 10px;
     }
 
-
-    .about-content-images {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
     .about-subtitle {
         font-size: 18px;
         margin-bottom: 30px;
@@ -394,13 +442,27 @@
     .collaboration-title {
         margin-bottom: 30px;
     }
+
+    #service-content .about-content-images {
+        width: 400px;
+    }
+
+    .about-content-images-item-title {
+        font-size: 25px;
+    }
+
+    .news .slick-list {
+        max-width: 450px;
+    }
+
+    .warehouse-image {
+        width: 400px;
+    }
+
 }
 
 
 @media screen and (max-width: 460px) {
-    .leasing-block {
-        padding: 160px 20px 20px 20px;
-    }
 
     .leasing-block-title {
         font-size: 25px;
@@ -417,10 +479,88 @@
     .service-subtitle {
         font-size: 18px;
     }
+
+    #service-content .about-content-images {
+        width: 300px;
+    }
+
+    .about-content-images {
+        width: 300px;
+        height: 190px;
+    }
+
+    .warehouse {
+        padding: 20px 10px;
+    }
+
+    .warehouse-block-description {
+        font-size: 18px;
+    }
+
+    .warehouse-image {
+        width: 280px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     .catalog-items-item {
-        height: 349px;
+        height: 280px;
+        /*background-size: 250px;*/
     }
+
+    .catalog-items-item-title {
+        font-size: 20px;
+    }
+
+    .grid-3,
+    .grid-6 {
+        height: 200px;
+    }
+
+    .grid-13,
+    .grid-15,
+    .grid-18 {
+        height: 240px;
+    }
+
+    .grid-16 {
+        height: 250px;
+    }
+
+    .grid-17,
+    .grid-18 {
+        background-size: 190px;
+    }
+
+    .grid-8 {
+        background-size: 200px;
+    }
+
+    .grid-14,
+    .grid-16 {
+        background-size: 200px;
+    }
+
+    .grid-4 {
+        background-size: 220px;
+    }
+
+    .grid-5,
+    .grid-7,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+        background-size: 240px;
+    }
+
+    .grid-1,
+    .grid-2,
+    .grid-13 {
+        background-size: 250px;
+    }
+
+
+
 }

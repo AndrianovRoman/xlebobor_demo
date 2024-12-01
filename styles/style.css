@@ -7,6 +7,61 @@ body {
     font-weight: 400;
 }
 
+.circle-cursor-min, .circle-cursor {
+    mix-blend-mode: normal;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    position: fixed;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.circle-cursor-min {
+    z-index: 99;
+    width: 10px;
+    height: 10px;
+    background-color: #f55a00;
+    border-radius: 50%;
+}
+
+.circle-cursor {
+    z-index: 98;
+    width: 20px;
+    height: 20px;
+    background-color: #f55a00;
+    border-radius: 50%;
+}
+
+/*.circle-cursor {*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    background: #f55a00;*/
+/*    border-radius: 50%;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    z-index: 100;*/
+/*}*/
+
+/*.circle-cursor-min {*/
+/*    width: 10px;*/
+/*    height: 10px;*/
+/*    background: #f55a00;*/
+/*    border-radius: 50%;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    z-index: 100;*/
+/*}*/
+
 .button-orange {
     display: flex;
     align-items: center;
@@ -117,6 +172,54 @@ body {
 }
 
 /*-----Стили для первого блока конец-----*/
+/*-----Стили для склад начало-----*/
+
+.warehouse {
+    background-color: #EBE8E8;
+    border-radius: 30px;
+    padding: 50px;
+    position: relative;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.warehouse-block {
+    max-width: 600px;
+}
+
+.warehouse-block-title {
+    font-family: Manrope, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #1E1E1E;
+    line-height: 100%;
+    margin-bottom: 50px;
+}
+
+.warehouse-block-title span {
+    color: #f55a00;
+}
+
+.warehouse-block-description {
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(30, 30, 30, 0.8);
+}
+
+.warehouse-image {
+    width: 500px;
+}
+
+.warehouse-image img {
+    width: 100%;
+}
+
+
+/*-----Стили для склад конец-----*/
 /*-----Стили для блока лизинг начало-----*/
 
 .leasing {
@@ -126,7 +229,7 @@ body {
 .leasing-block {
     background-color: #EBE8E8;
     border-radius: 50px;
-    padding: 100px 124px 80px 60px;
+    padding: 50px;
     position: relative;
 }
 
@@ -247,7 +350,7 @@ body {
     background-image: url("../images/оборудование/Округлители теста-Photoroom (1) 2.png");
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 260px;
 
 }
 
@@ -264,7 +367,7 @@ body {
     background-image: url("../images/оборудование/Универсальные дозаторы.png");
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 275px;
 }
 
 .grid-8 {
@@ -346,7 +449,7 @@ body {
     background-image: url("../images/оборудование/Тележки и формы.png");
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 225px;
 }
 
 .grid-18 {
@@ -397,6 +500,11 @@ body {
     margin: 0 auto 50px auto;
 }
 
+.service-subtitle a {
+    text-decoration: none;
+    color: #f55a00;
+}
+
 .service-advantages {
     display: flex;
     align-items: center;
@@ -406,7 +514,7 @@ body {
 
 .service-advantages-item {
     width: 355px;
-    height: 210px;
+    height: 180px;
     background-color: #FFF;
     padding: 40px 19px 40px 24px;
     border-top-right-radius: 30px;
@@ -565,7 +673,7 @@ body {
     font-size: 30px;
     text-align: center;
     color: rgba(30, 30, 30, 0.5);
-    padding: 40px;
+    padding: 10px;
     width: 540px;
     height: 101px;
     border-radius: 30px;
