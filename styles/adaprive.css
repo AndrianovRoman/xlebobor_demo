@@ -9,6 +9,19 @@
     }
 }
 
+@media screen and (max-width: 1300px) {
+
+    .grid-1 {
+        background-size: 360px;
+    }
+
+    .grid-11 {
+        background-size: 360px;
+        background-position-x: -40px;
+    }
+
+}
+
 @media screen and (max-width: 1260px) {
     .main-advantages-item {
         padding: 50px 25px;
@@ -56,13 +69,9 @@
         background-size: contain;
     }
 
-    .grid-10 {
-        background-size: 180px;
+    .grid-11 {
+        background-position-x: right;
     }
-
-    /*.warehouse-image {*/
-    /*    max-width: 500px;*/
-    /*}*/
 }
 
 

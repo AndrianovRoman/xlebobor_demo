@@ -40,28 +40,6 @@ body {
     border-radius: 50%;
 }
 
-/*.circle-cursor {*/
-/*    width: 30px;*/
-/*    height: 30px;*/
-/*    background: #f55a00;*/
-/*    border-radius: 50%;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    z-index: 100;*/
-/*}*/
-
-/*.circle-cursor-min {*/
-/*    width: 10px;*/
-/*    height: 10px;*/
-/*    background: #f55a00;*/
-/*    border-radius: 50%;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    z-index: 100;*/
-/*}*/
-
 .button-orange {
     display: flex;
     align-items: center;
@@ -227,6 +205,7 @@ body {
 }
 
 .leasing-block {
+    /*background-color: #1E1E1E;*/
     background-color: #EBE8E8;
     border-radius: 50px;
     padding: 50px;
@@ -237,26 +216,21 @@ body {
     font-family: Manrope, sans-serif;
     font-weight: 700;
     font-size: 57px;
-    color: #1E1E1E;
+    /*color: #EBE8E8;*/
+    color: #1e1e1e;
     line-height: 100%;
     margin-bottom: 50px;
     text-align: center;
 }
 
 .leasing-block-title span {
-    color: #F55A00;
+    color: #f55a00;
 }
 
 .leasing-block-info-button {
     max-width: 350px;
     margin: 0 auto;
 }
-
-/*.leasing-block-info {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 30px;*/
-/*}*/
 
 /*-----Стили для блока лизинг конец-----*/
 /*-----Стили для блока каталог начало-----*/
@@ -317,7 +291,7 @@ body {
     background-image: url("../images/оборудование/Хлебопекарные печи.png");
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 450px;
     height: 764px;
 }
 
@@ -375,7 +349,7 @@ body {
     background-image: url("../images/оборудование/Перегрузка теста и дежеопрокидыватели.png");
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 450px;
     height: 764px;
 }
 
@@ -400,7 +374,8 @@ body {
     background-image: url("../images/оборудование/пекарский холод.png");
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 400px;
+    background-position-x: -10px;
     height: 764px;
 }
 
@@ -776,10 +751,6 @@ body {
     margin-bottom: 50px;
 }
 
-/*.about-content-info-text:last-child {*/
-/*    margin-bottom: 50px;*/
-/*}*/
-
 .about-content-info-text span {
     color: #F55A00;
 }
@@ -977,7 +948,6 @@ body {
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    /*background: #6325dd;*/
 }
 
 ul:not([id*="bx_"]) > li:before{
