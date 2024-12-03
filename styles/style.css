@@ -56,7 +56,7 @@ body {
     border: 3px solid transparent;
 }
 
-.button-orange a {
+.button-orange div {
     font-size: 20px;
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
     color: transparent;
@@ -262,6 +262,7 @@ body {
 }
 
 .catalog-items-item {
+    text-decoration: none;
     padding-top: 50px;
     padding-left: 40px;
     background-color: #EBE8E8;
@@ -841,7 +842,7 @@ body {
 .news-items-item {
     background-color: #EBE8E8;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .news-items-item-img {
@@ -992,7 +993,7 @@ li.slick-active {
 }
 
 .collaboration-items .slick-list {
-    max-width: 400px;
+    max-width: 1500px;
 }
 
 .collaboration-items-item {

@@ -468,6 +468,10 @@
         width: 400px;
     }
 
+    .collaboration-items .slick-list {
+        max-width: 400px;
+    }
+
 }
 
 
